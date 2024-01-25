@@ -81,4 +81,36 @@ function printMyNumber(number) {
   }
 }
 
-printMyNumber(90)
+// printMyNumber(90)
+
+// function declaration
+function greet(name) {
+  return `Hello ${name}`
+}
+
+console.log(greet("Petar"))
+
+// arrow function
+let greet2 = (name) => {
+  return `Hello ${name}`
+}
+
+console.log(greet2("Martin"))
+
+// function expression
+let add = function (x, y) {
+  return x + y
+}
+
+console.log(add(3, 4))
+
+// High-order function
+function applyOperation(x, y, func) {
+  return func(x, y)
+}
+
+let result = applyOperation(10, 20, function (a, b) {
+  return a + b
+})
+
+console.log(result)
