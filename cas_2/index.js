@@ -69,7 +69,60 @@ let student = {
     zipCode: "1000",
   },
 }
-console.log(student.address.city)
+// console.log(student.address.city)
 
 // accessing properties using bracket notation
-console.log(student["grades"][1]) // prints 80
+// console.log(student["grades"][1]) // prints 80
+
+// Different types of for loops
+
+// normal foor loop
+// for (let i = 0; i <= 5; i++) {
+//   console.log(i)
+// }
+
+// example 1
+let cars = ["Mercedes", "BMW", "Toyota", "Ford", "Ferrari", "Audi", "Fiat"]
+
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(cars[i])
+// }
+
+// for-in loop
+for (let key in person) {
+  console.log(key + ": " + person[key])
+}
+
+// for-of loop
+let colors = ["yellow", "red", "green", "purple", "blue"]
+// for (let color of colors) {
+//   console.log(color)
+// }
+
+// while loops
+let count = 0
+
+// while (count < 5) {
+//   console.log(count)
+//   count++
+// }
+
+while (count < 5) {
+  if (count % 2 === 0) {
+    console.log("this is even number", count)
+  } else {
+    console.log("this is odd number", count)
+  }
+  count++
+}
+
+// do/while loop
+let randomNumber = 1
+let sum = 0
+
+do {
+  sum += randomNumber
+  randomNumber++
+} while (randomNumber < 4)
+
+console.log("Total sum ", sum)
