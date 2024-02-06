@@ -70,3 +70,44 @@ const promise2 = new Promise((resolve) => resolve(2))
 
 promise1.then((result) => result + 1).then((result) => console.log(result)) // Output: 1
 promise2.then((res) => res * 2).then((result) => console.log(result)) // Output: 4
+
+// Async/Await in JavaScript
+
+function getUserData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const userData = { name: "Mirko", surname: "Petkovski", age: 32 }
+      const isUserAvailable = false
+      if (isUserAvailable) {
+        resolve(userData)
+      } else {
+        reject("ERROR: The user is not found")
+      }
+    }, 3000)
+  })
+}
+
+// one way of resolving the Promise
+// getUserData()
+//   .then((user) => console.log(user))
+//   .catch((error) => console.log(error))
+
+// using async await
+// async function fetchUser() {
+//   const user = await getUserData()
+//   console.log(user)
+// }
+
+// fetchUser()
+
+// try/catch blocks - second way of handling Promises
+async function fetchUser() {
+  try {
+    const user = await getUserData()
+    console.log(user)
+  } catch (error) {
+    console.log("Something went wrong!", error)
+  }
+}
+
+fetchUser()
