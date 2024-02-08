@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to DOM</title>
+  </head>
+  <body>
+    <h1 id="title">Introduction to DOM</h1>
+    <p class="paragraph">Paragraph 1</p>
+    <p class="paragraph">Paragraph 2</p>
+    <p class="paragraph">Paragraph 3</p>
+
+    <div id="container"></div>
+
+    <script>
+      // Accessing elements
+      const title = document.getElementById("title")
+      // console.log(title)
+
+      const paragraphElements = document.getElementsByClassName("paragraph")
+      // console.log(paragraphElements) // returns HTML Collection
+
+      // console.log(paragraphElements[0]) // return the first element from the HTML Collection
+
+      const paragraphArray = Array.from(paragraphElements) // converts the HTML Collection in a array
+      // paragraphArray.forEach((item) => console.log(item))
+
+      const elementsByTag = document.getElementsByTagName("p")
+      // console.log(elementsByTag)
+
+      const elements = document.querySelectorAll(".paragraph")
+      //   elements.forEach((p) => console.log(p)) // when working with NodeList, we don't need to convert it to array
+      //   console.log(elements)
+
+      const titleElement = document.querySelector("#title")
+      //   console.log(titleElement)
+
+      const thirdElementParagraph = elements[2]
+      thirdElementParagraph.style.color = "red"
+      thirdElementParagraph.style.fontSize = "26px"
+    </script>
+  </body>
+</html>
