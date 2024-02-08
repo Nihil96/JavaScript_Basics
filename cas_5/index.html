@@ -36,9 +36,42 @@
       const titleElement = document.querySelector("#title")
       //   console.log(titleElement)
 
+      // Styling
       const thirdElementParagraph = elements[2]
       thirdElementParagraph.style.color = "red"
       thirdElementParagraph.style.fontSize = "26px"
+
+      titleElement.style.cssText =
+        "color: blue; font-size: 32px; margin-top: 30px"
+
+      const newElement = document.createElement("a")
+      newElement.setAttribute("class", "link")
+      if (newElement.classList.contains("link")) {
+        newElement.textContent = "Google"
+      }
+      console.log(newElement)
+
+      // Creating DOM Nodes
+      const newTitle = document.createElement("h2")
+
+      newTitle.textContent = "This is new title"
+
+      newTitle.setAttribute("id", "new-title")
+
+      document.body.appendChild(newTitle)
+
+      // Adding elements to the DOM
+      const container = document.getElementById("container")
+      const newDiv = document.createElement("div")
+      container.appendChild(newDiv)
+
+      const newImageElement = document.createElement("img")
+      container.insertBefore(newImageElement, newDiv)
+
+      // Modifying the DOM
+      const elementToRemove = document.getElementById("new-title")
+      const parentElement = elementToRemove.parentNode
+      parentElement.removeChild(elementToRemove)
     </script>
   </body>
 </html>
