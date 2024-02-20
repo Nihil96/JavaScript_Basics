@@ -54,6 +54,7 @@ class Person {
   }
 }
 
+// This class inherits from the class Person
 class Professor extends Person {
   constructor(name, age, subject) {
     super(name, age)
@@ -65,12 +66,66 @@ class Professor extends Person {
   }
 }
 
-class Student {}
+// This class inherits from the class Person
+class Student extends Person {
+  constructor(name, age, major) {
+    super(name, age)
+    this.major = major
+  }
+
+  study() {
+    console.log(`I am styding ${this.major}`)
+  }
+}
 
 // Instances
 const newPerson = new Person("Martin", 20)
 const professor = new Professor("Mitko", 45, "Computer Science")
+const student = new Student("Hristijan", 35, "Backend developmet")
 
-// newPerson.introduce()
-professor.introduce()
-professor.teach()
+// professor.introduce()
+// professor.teach()
+// student.study()
+
+// Static members, setters, getters and private variables
+class Circle {
+  // static property
+  static PI = 3.14
+
+  // private property
+  #radius
+
+  constructor(radius) {
+    this.#radius = radius
+  }
+
+  // getter for the radius
+  get getRadis() {
+    return this.#radius
+  }
+
+  // setter for the radius
+  set setRadis(newRadis) {
+    if (newRadis > 0) {
+      this.#radius = newRadis
+    } else {
+      console.log("The radius must be a positive number!")
+    }
+  }
+
+  // method
+  calculateArea() {
+    return Circle.PI * this.#radius ** 2
+  }
+}
+
+const circleOne = new Circle(30)
+console.log(circleOne.getRadis)
+
+circleOne.setRadis = 20 // changing the value of the radius
+console.log(circleOne.getRadis)
+
+console.log(Circle.PI) // accessing static property
+
+const circleTwo = new Circle(10)
+console.log(circleTwo.calculateArea())
