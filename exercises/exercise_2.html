@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+  </head>
+  <body>
+    <button id="showBtn">Show Popular Bands</button>
+    <button id="clearBtn">Clear Popular Bands</button>
+
+    <div id="bands-container"></div>
+
+    <script>
+      const popularBands = [
+        "The Beatles",
+        "Queen",
+        "Led Zeppelin",
+        "ABBA",
+        "BTS",
+        "Nirvana",
+        "U2",
+        "Metallica",
+        "Coldplay",
+        "Pink Floyd",
+      ]
+
+      localStorage.setItem("popular-bands", JSON.stringify(popularBands))
+
+      function showBands() {
+        const bandsContainer = document.getElementById("bands-container")
+
+        const storedBands = localStorage.getItem("popular-bands")
+        const bandsArray = JSON.parse(storedBands)
+
+        bandsArray.forEach((band) => {
+          const pTag = document.createElement("p")
+          pTag.textContent = band
+          bandsContainer.appendChild(pTag)
+        })
+      }
+
+      function clearBands() {
+        const bandsContainer = document.getElementById("bands-container")
+
+        // this line will clear the bands form the browser
+        bandsContainer.innerHTML = ""
+
+        // this line will clear the localStorage
+        localStorage.removeItem("popular-bands")
+      }
+
+      const showBtn = document.getElementById("showBtn")
+      const clearBtn = document.getElementById("clearBtn")
+
+      showBtn.addEventListener("click", showBands)
+      clearBtn.addEventListener("click", clearBands)
+    </script>
+  </body>
+</html>
