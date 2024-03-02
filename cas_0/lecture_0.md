@@ -20,12 +20,13 @@ Here's a breakdown of a program's key components:
 
 Examples in JavaScript:
 
-1.
+
+1. Greeting the User
 ```
 console.log("Hello, world!"); // Output a message to the console
 ```
 
-2.
+2. Adding Two Numbers
 ```
 const num1 = 20;
 const num2 = 30;
