@@ -1,6 +1,6 @@
 # Complex Data Types and Loops JS:
 
-![Alt Text](https://media.licdn.com/dms/image/D4D12AQHqiS-_Ypo95Q/article-cover_image-shrink_720_1280/0/1654366936661?e=2147483647&v=beta&t=dRSLoQx-V5brk-w5qFGttLz19phitMReJHhJwQyXxm0 "API Example")
+![Alt Text](https://media.licdn.com/dms/image/D4D12AQHqiS-_Ypo95Q/article-cover_image-shrink_720_1280/0/1654366936661?e=2147483647&v=beta&t=dRSLoQx-V5brk-w5qFGttLz19phitMReJHhJwQyXxm0 "Complex Data Types and Loops JS")
 
 ## Arrays and Objects in JavaScript
 
