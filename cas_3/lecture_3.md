@@ -1,5 +1,7 @@
 # Manipulating Arrays and ES6 features
 
+![Alt Text](https://miro.medium.com/v2/resize:fit:640/1*kCD_6R3UkMHkpS_YgFoU9w.jpeg "ES6")
+
 ## Build-in High Order Functions in JS
 
 Higher-order functions are functions that take other functions as arguments or return them as results. They are powerful tools in JavaScript for working with arrays and collections of data.
