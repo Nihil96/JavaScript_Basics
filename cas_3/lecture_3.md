@@ -1,7 +1,7 @@
 # Manipulating Arrays and ES6 features
 
 <p align="center">
-![Alt Text](https://miro.medium.com/v2/resize:fit:640/1*kCD_6R3UkMHkpS_YgFoU9w.jpeg "ES6")
+ <img src="https://miro.medium.com/v2/resize:fit:640/1*kCD_6R3UkMHkpS_YgFoU9w.jpeg" alt="ES6">
 </p>
 
 ## Build-in High Order Functions in JS
