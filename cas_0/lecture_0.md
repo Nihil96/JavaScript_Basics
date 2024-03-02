@@ -2,6 +2,38 @@
 
 ![Alt Text](https://www.infragistics.com/community/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-08-70/dev_2D00_tools_2D00_ignite_2D00_ui_2D00_javascript_2D00_2.jpg "JavaScript Logo")
 
+## First of all, what exactly is programming?
+
+Before jumping straight into the language itself, let's first see what programming means and what a program is.
+
+*Programming* is the process of instructing a computer to perform a task. It involves designing and building a set of instructions, called a program, that a computer can understand and execute.
+
+A *program*, on the other hand, is a set of step-by-step instructions that tell a computer how to perform a specific task or solve a particular problem.
+
+Here's a breakdown of a program's key components:
+
+**Input:** This is the information the program receives. It can be data entered by the user, data from a file, or even data from another program.
+
+**Process:** This is the core of the program, where it takes the input and transforms it according to the given instructions. Think of it as the "magic" happening behind the scenes.
+
+**Output:** This is the result the program produces after processing the input. It can be displayed on the screen, stored in a file, or used by another program.
+
+Examples in JavaScript:
+
+1.
+```
+console.log("Hello, world!"); // Output a message to the console
+```
+
+2.
+```
+const num1 = 20;
+const num2 = 30;
+const sum = num1 + num2;
+
+console.log("The sum of", num1, "and", num2, "is:", sum); // Output the sum with labels
+```
+
 ## What is JavaScript?
 
 JavaScript is a versatile programming language primarily used for adding interactivity to websites. It allows developers to create dynamic, interactive, and user-friendly web applications. Here are some key aspects of JavaScript:
@@ -26,7 +58,7 @@ JavaScript is a versatile programming language primarily used for adding interac
 
 ## Console
 
-console.log is a method used to log messages to the console, which is a developer tool available in most web browsers. The argument passed to console.log is the message you want to log. In the example below, it's the string "Hello World!". When you run this code, "Hello World!" will be printed to the console, and you can see this output in the browser's developer tools (usually by pressing F12 and navigating to the "Console" tab).
+```console.log``` is a method used to log messages to the console, which is a developer tool available in most web browsers. The argument passed to console.log is the message you want to log. In the example below, it's the string "Hello World!". When you run this code, "Hello World!" will be printed to the console, and you can see this output in the browser's developer tools (usually by pressing F12 and navigating to the "Console" tab).
 
 Example:
 
